@@ -9,7 +9,17 @@ def khodam_program():
       if nama.strip() and nama.isalpha():
          break
       else:
-         print("Masukkan Nama Yang Benar")
+         print("Masukan Nama Yang Benar")
+
+   while True:
+      umur = input("Berapa Umur Kamu: ")
+      if umur.strip() and umur.isdigit():
+         umur = int(umur)
+         break
+      else:
+         print("Itumah Bukan Umur! Masukan Umur Yang Valid!")
+
+   print(f"Halo {nama} Khodam Kamu {data_khodam[2]}")
 
 
 
