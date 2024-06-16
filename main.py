@@ -1,3 +1,5 @@
+import random
+
 def khodam_program():
 
    data_khodam = ['Macan Hitam', 'Macan Putih', 'Macan Merah', 'Singa', 'Gajah', 'Ular Kobra', 'Kalajengking', 'Kak Gem', 'Burung Dara', 'Burung Elang']
@@ -19,8 +21,8 @@ def khodam_program():
       else:
          print("Itumah Bukan Umur! Masukan Umur Yang Valid!")
 
-   print(f"Halo {nama} Khodam Kamu {data_khodam[2]}")
-
+   hasil_khodam = random.choice(data_khodam)
+   print(f"Halo {nama}, Khodam Kamu {hasil_khodam}")
 
 
 khodam_program()
