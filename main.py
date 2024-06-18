@@ -3,7 +3,7 @@ import re
 
 def khodam_program():
    # DATABASE
-   data_khodam = ['Macan Hitam', 'Macan Putih', 'Macan Merah', 'Singa', 'Gajah', 'Ular Kobra', 'Kalajengking', 'Kak Gem', 'Burung Dara', 'Burung Elang']
+   data_khodam = ['Gak Ada', 'Macan Hitam', 'Macan Putih', 'Macan Merah', 'Singa', 'Gajah', 'Ular Kobra', 'Kalajengking', 'Kak Gem', 'Burung Dara', 'Burung Elang']
    kepribadian_khodam = {
       'Macan Hitam': 'Seseorang Yang Tunggu Kiris Besar Nan Perkasa',
       'Macan Putih': 'Seseorang Yang Putih Bersih Dan Baik Hati Rajin Menabung Dan Baik Dengan Istri',
@@ -41,6 +41,8 @@ def khodam_program():
    print(f"\nHalo {nama}, Khodam Kamu {hasil_khodam}")
    if hasil_khodam in kepribadian_khodam:
       print(f"Kepribadian {hasil_khodam} Artinya {kepribadian_khodam[hasil_khodam]}")
+   elif hasil_khodam not in kepribadian_khodam:
+      print(f"Kepribadian {hasil_khodam} Artinya Kamu Gak Punya Khodam")
 
 # LOOPING
 cek_lagi = True
